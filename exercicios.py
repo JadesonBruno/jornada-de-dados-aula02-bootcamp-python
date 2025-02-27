@@ -1,22 +1,45 @@
-""" print(5 + 2) # addition
-print(5 -2) # subtracion
-print(5 * 2) # multiplication
-print(5 ** 2) # exponentiation
-print(5 / 2) # decimal division
-print(5 // 2) # integer division
-print(5 % 2) # reamainder of division """
+# Conteúdo
+""" 
+1. Inteiros (int)
 
-""" student_name = "Jadeson"
+    • Métodos e operações:
 
-print(student_name.upper())
-print(student_name.lower())
+        + (adição)
+        - (subtração)
+        * (multiplicação)
+        // (divisão inteira)
+        % (módulo - resto da divisão)
 
-name_with_space = "  Hello World                   "
+2. Números de Ponto Flutuante (float)
 
-print(name_with_space.strip())
+    •Métodos e operações:
+        + (adição)
+        - (subtração)
+        * (multiplicação)
+        / (divisão)
+        ** (potenciação)
 
-email = "jadesonbruno@outlook.com"
-print(email.split("@")) """
+3. Strings (str)
+
+    • Métodos e operações:
+        .upper() (converte para maiúsculas)
+        .lower() (converte para minúsculas)
+        .strip() (remove espaços em branco no início e no final)
+        .split(sep) (divide a string em uma lista, utilizando sep como delimitador)
+        + (concatenação de strings)
+
+4. Booleanos (bool)
+    
+    • Operações lógicas:
+        and (E lógico)
+        or (OU lógico)
+        not (NÃO lógico)
+        == (igualdade)
+        != (diferença) 
+"""
+
+# importado bibiliotecas
+import math 
 
 
 # #### Inteiros (`int`)
@@ -44,12 +67,13 @@ multiplication = value_1 * value_2
 
 print(f"The sum of numbers is: {multiplication}") """
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
-value_1 = int(input("Type value 1: "))
+""" value_1 = int(input("Type value 1: "))1
 value_2 = int(input("Type value 2: "))
 
 division = value_1 // value_2
 
-print(f"The division of numbers is: {division}")
+print(f"The division of numbers is: {division}") """
+
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
 """ value = int(input("Type the value: "))
 
@@ -99,11 +123,11 @@ print(f"The temperature in Fahrenheit is: {fahrenheit_temperature}") """
 
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
 """ radius = float(input("Enter the radius value: "))
-PI = 3.141592653
+PI = math.pi
 
 circle_area = PI * (radius ** 2)
 
-print(f"The area of circle is: {circle_area}") """
+print(f"The area of circle is: {circle_area:.2f}") """
 
 # #### Strings (`str`)
 
