@@ -38,9 +38,10 @@
         != (diferença) 
 """
 
-# importado bibiliotecas
-import math 
+# Exercícios
 
+# importado bibiliotecas necessárias
+import math 
 
 # #### Inteiros (`int`)
 
@@ -226,6 +227,38 @@ number_comparative = number_1_input != number_2_input
 print(f'Inputs are different numbers: {number_comparative}') """
 
 # #### try-except e if
+
+# This way the script is susceptible to errors
+""" number_1 = float(input("Enter number 1: "))
+number_2 = float(input("Enter number 2: "))
+
+result = number_1 / number_2
+
+print(result) """
+
+# This way the script has error handling 
+""" try: 
+    number_1 = float(input("Enter number 1: "))
+    number_2 = float(input("Enter number 2: "))
+
+    result = number_1 / number_2
+
+    print(result)
+except:
+    print("Result of division is a indetermination.") """
+
+# This way the script has error handling with python error
+try: 
+    number_1 = float(input("Enter number 1: "))
+    number_2 = float(input("Enter number 2: "))
+
+    result = number_1 / number_2
+
+    print(result)
+except ZeroDivisionError:
+    print("Error: Result of division is a indetermination.")
+except KeyboardInterrupt:
+    print("\nError: There was interruption in program.")
 
 # 21: Conversor de Temperatura
 # 22: Verificador de Palíndromo
