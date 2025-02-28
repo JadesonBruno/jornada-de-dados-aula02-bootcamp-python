@@ -229,5 +229,34 @@ else:
     print("Everything went well!") """
 
 # 23: Calculadora Simples
+# Desenvolva uma calculadora simples que aceite duas entradas numéricas e um operador (+, -, *, /) do usuário. 
+# Use try-except para lidar com divisões por zero e entradas não numéricas. 
+# Utilize if-elif-else para realizar a operação matemática baseada no operador fornecido. Imprima o resultado ou uma mensagem de erro apropriada.
+""" try:
+    operation = input("Enter a operation (+, -, *, /): ")
+    if operation not in ("+", "-", "*", "/"):
+        raise ("Error: input operation invalid")
+        
+    number_1 = float(input("Enter a number 1: "))
+    number_2 = float(input("Enter a number 2: "))
+
+
+    if operation == "+":
+        result = number_1 + number_2
+    elif operation == "-":
+        result = number_1 - number_2
+    elif operation == "*":
+        result = number_1 * number_2
+    elif operation == "/":
+        result = number_1 / number_2
+
+    print(f'The result of operation is: {result}')
+
+except ValueError:
+    print("Error: Input is not a number.")
+
+except ZeroDivisionError:
+    print("Error: It's not permitted division by zero.") """
+
 # 24: Classificador de Números
 # 25: Conversão de Tipo com Validação
