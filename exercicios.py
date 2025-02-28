@@ -259,4 +259,27 @@ except ZeroDivisionError:
     print("Error: It's not permitted division by zero.") """
 
 # 24: Classificador de Números
+# Escreva um programa que solicite ao usuário para digitar um número. Utilize try-except para assegurar 
+# que a entrada seja numérica e utilize if-elif-else para classificar o número como "positivo", "negativo" ou "zero". 
+# Adicionalmente, identifique se o número é "par" ou "ímpar".
+""" try:
+    number = float(input("Enter a number: "))
+
+    if number > 0:
+        classifier = "Positive"
+    elif number < 0:
+        classifier = "Negative"
+    else:
+        classifier = "Zero"
+
+    print(f'This is number is {classifier}.')
+
+    if (number % 2) == 0:
+        print("It´s also even.")  
+    else:
+        print("It´s alse odd.")  
+
+except ValueError:
+    print("Error: Input is invalid, it´s not a number.") """
+
 # 25: Conversão de Tipo com Validação
