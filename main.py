@@ -126,11 +126,11 @@ try:
 except ValueError:
     print("The variable is not a number.") """
 
-# using if
+""" # using if
 age = 20
 if age < 18:
     print("Under 18 years old")
 elif age == 18:
     print("Exactly 18 years")
 else:
-    print("Over 18 years old")
+    print("Over 18 years old") """
