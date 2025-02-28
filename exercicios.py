@@ -1,43 +1,3 @@
-# Conteúdo
-""" 
-1. Inteiros (int)
-
-    • Métodos e operações:
-
-        + (adição)
-        - (subtração)
-        * (multiplicação)
-        // (divisão inteira)
-        % (módulo - resto da divisão)
-
-2. Números de Ponto Flutuante (float)
-
-    •Métodos e operações:
-        + (adição)
-        - (subtração)
-        * (multiplicação)
-        / (divisão)
-        ** (potenciação)
-
-3. Strings (str)
-
-    • Métodos e operações:
-        .upper() (converte para maiúsculas)
-        .lower() (converte para minúsculas)
-        .strip() (remove espaços em branco no início e no final)
-        .split(sep) (divide a string em uma lista, utilizando sep como delimitador)
-        + (concatenação de strings)
-
-4. Booleanos (bool)
-    
-    • Operações lógicas:
-        and (E lógico)
-        or (OU lógico)
-        not (NÃO lógico)
-        == (igualdade)
-        != (diferença) 
-"""
-
 # Exercícios
 
 # importado bibiliotecas necessárias
@@ -226,42 +186,48 @@ number_comparative = number_1_input != number_2_input
 
 print(f'Inputs are different numbers: {number_comparative}') """
 
-# #### try-except e if
-
-# This way the script is susceptible to errors
-""" number_1 = float(input("Enter number 1: "))
-number_2 = float(input("Enter number 2: "))
-
-result = number_1 / number_2
-
-print(result) """
-
-# This way the script has error handling 
-""" try: 
-    number_1 = float(input("Enter number 1: "))
-    number_2 = float(input("Enter number 2: "))
-
-    result = number_1 / number_2
-
-    print(result)
-except:
-    print("Result of division is a indetermination.") """
-
-# This way the script has error handling with python error
-try: 
-    number_1 = float(input("Enter number 1: "))
-    number_2 = float(input("Enter number 2: "))
-
-    result = number_1 / number_2
-
-    print(result)
-except ZeroDivisionError:
-    print("Error: Result of division is a indetermination.")
-except KeyboardInterrupt:
-    print("\nError: There was interruption in program.")
-
 # 21: Conversor de Temperatura
+""" Escreva um programa que converta a temperatura de Celsius para Fahrenheit. O programa deve solicitar ao usuário a temperatura em Celsius e, 
+utilizando try-except, garantir que a entrada seja numérica, tratando qualquer ValueError. 
+Imprima o resultado em Fahrenheit ou uma mensagem de erro se a entrada não for válida. """
+
+""" try:
+    celsius_temperature = float(input("Type the temperature: "))
+
+    fahrenheit_temperature = (celsius_temperature * 9/5) + 32
+
+    print(f"The temperature in Fahrenheit is: {fahrenheit_temperature}")
+
+except ValueError:
+    print("Error: The input is not a number.") """
+
 # 22: Verificador de Palíndromo
+""" Crie um programa que verifica se uma palavra ou frase é um palíndromo (lê-se igualmente de trás para frente, desconsiderando espaços e pontuações). 
+Utilize try-except para garantir que a entrada seja uma string. 
+Dica: Utilize a função isinstance() para verificar o tipo da entrada. """
+
+try:
+    word = input("Enter word: ")
+
+    if not word:
+        raise ValueError ("Input cannot be empty.")
+
+    if isinstance(word, str):
+        cleaned_word = word.strip().replace(" ", "")
+        word_reversed = cleaned_word[::-1]
+        is_palindrome = cleaned_word == word_reversed
+        
+        if is_palindrome == True:
+            print("The word is palindrome.")
+        else:
+            print("The word is not palindrome.")
+
+except ValueError as e:
+    print(f"Error: {e}")
+
+else: 
+    print("Deu tudo certo!")
+
 # 23: Calculadora Simples
 # 24: Classificador de Números
 # 25: Conversão de Tipo com Validação
