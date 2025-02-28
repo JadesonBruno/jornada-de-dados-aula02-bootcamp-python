@@ -134,13 +134,3 @@ elif age == 18:
     print("Exactly 18 years")
 else:
     print("Over 18 years old")
-
-
-
-
-
-
-
-
-
-
