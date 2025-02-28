@@ -187,47 +187,7 @@ number_comparative = number_1_input != number_2_input
 print(f'Inputs are different numbers: {number_comparative}') """
 
 # 21: Conversor de Temperatura
-""" Escreva um programa que converta a temperatura de Celsius para Fahrenheit. O programa deve solicitar ao usuário a temperatura em Celsius e, 
-utilizando try-except, garantir que a entrada seja numérica, tratando qualquer ValueError. 
-Imprima o resultado em Fahrenheit ou uma mensagem de erro se a entrada não for válida. """
-
-""" try:
-    celsius_temperature = float(input("Type the temperature: "))
-
-    fahrenheit_temperature = (celsius_temperature * 9/5) + 32
-
-    print(f"The temperature in Fahrenheit is: {fahrenheit_temperature}")
-
-except ValueError:
-    print("Error: The input is not a number.") """
-
 # 22: Verificador de Palíndromo
-""" Crie um programa que verifica se uma palavra ou frase é um palíndromo (lê-se igualmente de trás para frente, desconsiderando espaços e pontuações). 
-Utilize try-except para garantir que a entrada seja uma string. 
-Dica: Utilize a função isinstance() para verificar o tipo da entrada. """
-
-try:
-    word = input("Enter word: ")
-
-    if not word:
-        raise ValueError ("Input cannot be empty.")
-
-    if isinstance(word, str):
-        cleaned_word = word.strip().replace(" ", "")
-        word_reversed = cleaned_word[::-1]
-        is_palindrome = cleaned_word == word_reversed
-        
-        if is_palindrome == True:
-            print("The word is palindrome.")
-        else:
-            print("The word is not palindrome.")
-
-except ValueError as e:
-    print(f"Error: {e}")
-
-else: 
-    print("Deu tudo certo!")
-
 # 23: Calculadora Simples
 # 24: Classificador de Números
 # 25: Conversão de Tipo com Validação
